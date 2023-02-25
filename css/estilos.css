@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#headerPrincipal{
+   display: grid;
+   grid-template-columns: 200px 1fr 200px;
+}
+.imgLogo{
+    width: 150px;
+}
+
+.h1Principal{
+    
+   color: rgb(128, 134, 134);
+}
+/*carrito*/
+
+
+.carrito :hover{
+left: 200px;
+
+
+
+}
+.modal-header{
+    cursor: pointer;
+ display: grid;
+ grid-template-columns: 500px 1fr;
+
+}
+.modalBoton{
+ display: flex;
+border: 5px solid black;
+border-radius: 20px;
+padding: 20px;
+
+}
+.modalBoton :hover{
+    
+        animation-name: boton;    
+        animation-iteration-count: infinite ;
+        animation-duration: 10s;
+}
+.modalContenedor{  
+    width: 100%;
+    display: grid;
+    grid-template-columns: 500px ;
+ align-self: start;
+    cursor: pointer;
+    background-color: rgb(243, 223, 223);
+
+   
+}
+
+.modal-Nuevo{
+    background-color: rgba(236, 255, 255, 0.521);
+    display: flex;
+    justify-content: space-between;
+    
+    width: 200%;
+}
+.comprar{
+width: 100px;
+    padding: 15x;
+    border: 2px solid ;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    border-radius: 20px ;
+    background-color: rgb(196, 231, 231);
+ 
+}
+#compra{
+    display: flex;
+    justify-content:center;
+}
+.modal-Nuevo{
+   display: flex;
+ }
+
+/*navegador*/
+#navegador .ulNav{
+    display: flex;
+    position: fixed;
+    list-style: none;   
+  
+}
+
+
+#navegador .ulNav .navLi{
+    list-style-type: none;  
+padding: 5px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+.ulNav :hover{
+    animation-name: boton;    
+    animation-iteration-count: infinite ;
+    animation-duration: 10s;
+    text-decoration: overline;
+    /* animation-timing-function: linear; */
+    
+    }
+    @keyframes boton{
+        from {
+            transform:scale(0.5);
+    
+        }
+        to{
+    transform:scale(0.5);
+        }    
+    
+    }
+
+
+
+#navPrincipal .ulPrincipal{
+ 
+    position: fixed;
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+   
+}
+
+#navPrincipal .ulPrincipal .liPrincipal{
+    padding: 5px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+    }
+    a{
+        text-decoration: none;
+    }
+
+    /* .ulPrincipal :hover{
+        animation-name: boton;    
+        animation-iteration-count: infinite ;
+        animation-duration: 10s;
+        /* animation-timing-function: linear; */
+        
+      
+    /*Main*/
+
+
+#mainPrincipal .h2Principal{
+    padding: 20px;
+    font-size: 30px;
+    margin: 20px;
+    color: rgb(8, 141, 182);
+    text-align: center;
+}
+#sectionPrincipal{
+    background-color: rgb(6, 229, 245);
+
+ padding: 20px;
+
+}
+/*Formulario*/
+.formulario1 #fechaIda{
+    background-color: rgb(192, 240, 224);
+    color: rgb(88, 2, 2);
+    padding: 10px;
+    border-radius: 20px;
+}
+.formulario1 #fechaVuelta{
+    background-color: rgb(2, 66, 45);
+    color: rgb(88, 2, 2);
+    padding: 10px;
+    border-radius: 20px;
+}
+.formulario1{
+   display: flex;
+justify-content: space-around  ;
+}
+.formIdaVuelta{
+    background-color: antiquewhite  ; 
+    border-radius: 20px;
+    padding: 20px;
+
+}
+/*H·*/
+#h3Principal{
+   text-decoration: underline;
+    padding: 30px;
+font-size: 50px;
+   color: rgb(105, 195, 223)  ;
+}
+
+.h3IdaYvuelta{
+text-decoration: underline;
+    font-size: 30px;
+    padding: 20px;
+    color: rgb(2, 41, 53);
+}
+
+.formulario1{
+    cursor : pointer;
+}
+
+.pais{
+    cursor : pointer;
+}
+.logoPersonas{
+    width: 100px;
+}
+.personas {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+ cursor : pointer;
+}
+
+/*boton buscar*/
+#botonBuscar .btn{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(79, 83, 83);
+    color: beige;
+}
+#botonBuscar :hover{
+    animation-name: boton;    
+    animation-iteration-count: infinite ;
+    animation-duration: 10s;
+    /* animation-timing-function: linear; */
+    
+    }
+
+/*Seccion Compra*/
+#imagenes{
+    margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr    ;
+
+
+}
+#img{
+  width: 300px;
+  
+ }
+
+ .restar{
+    font-size: 30px;
+ }
+ .sumar{
+    font-size: 30px;
+ }
+ .contenido{
+font-size: 20px;
+
+top: 0;
+right: 0;
+left: 0;
+ }
+ #img :hover{
+    animation-name: img;    
+    animation-iteration-count: infinite ;
+    animation-duration: 10s;
+    /* animation-timing-function: linear; */
+    
+    }
+    /*animacion*/
+    @keyframes img{
+        from {
+            transform:scale(1.1);
+    
+        }
+        to{
+    transform:scale(1.1);
+        }    
+    
+    }
+
+    /*animacion*/
+    @keyframes boton{
+        from {
+            transform:scale(1.1);
+    
+        }
+        to{
+    transform:scale(1.1);
+        }    
+    
+    }
+
+    @keyframes boton{
+        from {
+            transform:scale(1.1);
+    
+        }
+        to{
+    transform:scale(1.1);
+        }    
+    
+    }
+
+
+
+.comprarBoton {
+margin: 20px;
+background-color: rgb(10, 10, 87);
+display: flex;
+justify-content: center;
+padding: 5px;
+border-radius: 5px;
+color: antiquewhite;
+cursor: pointer;
+}
+
+.comprarBoton :hover{
+ animation-name: comprar;    
+ animation-iteration-count: infinite ;
+ animation-duration: 10s;
+ /* animation-timing-function: linear; */
+          
+}
+@keyframes comprar{
+    from {
+        transform:scale(1.1);
+
+    }
+    to{
+transform:scale(1.1);
+    }    
+
+}
+
+@keyframes boton{
+    from {
+        transform:scale(1.1);
+
+    }
+    to{
+transform:scale(1.1);
+    }    
+
+}
+
+.sumar{
+    cursor: pointer;
+}
+.restar{
+    cursor: pointer;
+}
+.h3Paquetes{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(2, 70, 70);
+    text-decoration: underline;
+
+}
+
+footer{
+padding: 50px;
+background-color: aquamarine    ;
+}
+h6{
+text-align: end;
+text-align: center;
+}
+#navFooter :hover{
+text-decoration: overline;
+}
+    
+#navFooter .ulFooter{
+text-decoration: none;
+display: flex;
+list-style: none;
+}
+#navFooter .ulFooter .liFooter{
+        padding: 5px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    
+        }
+        a{
+            text-decoration: none;
+        }
+ @media only screen  and (max-width:720px) and   (min-width:320px) {
+   .h1Principal{
+   text-align: center;
+   }
+    .navegador{
+        margin: 20px;
+        text-align: center;
+    
+    }
+    .navPrincipal{
+        margin: 20px;
+        text-align: center; 
+    }
+    .h2Principal{
+        font-size: 20px;
+    }
+    .divIdaVuleta{
+        margin: 20px;
+        padding: 10px;
+    }
+    #imagenes{
+
+        
+ 
+     display: none;
+    }   
+  
+        .img{
+           
+            display: flex;
+            justify-content: center;
+           } 
+    
+       
+    }
+    #sectionPrincipal{
+        display: grid;
+        grid-auto-columns:1fr 1fr   ;
+        justify-content: center;
+        }
+        h3{
+            text-align: center;
+        }
+    
+ 
+
+
+
+        @media only screen  and (max-width:710px) and   (min-width:340px) {
+
+.navegador{
+    margin: 20px;
+    text-align: center;
+
+}
+.navPrincipal{
+    margin: 20px;
+    text-align: center; 
+}
+.h2Principal{
+    font-size: 20px;
+}
+.divIdaVuleta{
+    margin: 20px;
+    padding: 10px;
+}
+
+    #imagenes{
+
+        
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        
+    }
+    .img{
+        width: 100px;
+        
+       } 
+
+}
